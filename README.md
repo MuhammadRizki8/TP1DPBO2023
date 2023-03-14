@@ -4,9 +4,8 @@
 ### Diagram UML Program
 ---------------
 ![TP1 drawio](https://user-images.githubusercontent.com/100481579/224930423-805bcc0d-a9d2-40d5-ace1-7509756b4c4a.png)
-
-### Penjelasan kelas
 ---------------
+### Penjelasan kelas
 1. Human
   * kelas yang merepresentasikan manusia
   * Atribut
@@ -108,7 +107,7 @@
     - add_matkul_diampu(matkul): menambahkan mata kuliah matkul ke dalam list mata kuliah yang diampu oleh dosen
     - get_all_data(): mencetak seluruh atribut dosen beserta nilainya.
     - beri_nilai(mhs, matkul, nilai): memberikan nilai pada mata kuliah matkul untuk mahasiswa mhs dengan nilai nilai. Jika matkul tidak termasuk mata kuliah yang diampu oleh dosen, maka akan muncul pesan bahwa nilai tidak dapat diberikan.
-
+---------------
 ### Alur Program
 * Program menampilkan 4 menu utama
 ![image](https://user-images.githubusercontent.com/100481579/224984185-a4a83ff7-0226-4123-a27e-c1f3d52ad402.png)
@@ -116,7 +115,7 @@
 * jika memilih 2 maka program akan memberikan menu informasi tentang BEM
 * jika memilik 3 maka program akan memberikan menu informasi tentang english club
 * semua menu berada dalam sebuah loop, loop hanya akan berakhir jika user memilih opsi exit
-
+---------------
 ### interaksi dalam class dan antar class
 1. Kelas Mahasiswa
   * Mahasiswa hanya mendapat nilai dari dosen
@@ -127,6 +126,17 @@
     - evaluation -> diisi berdasarkan proker pada array implementing. **tidak dapat mengimplementasikan proker jika belum di-implementing! 
 3. Dosen
   * Dosen dapat mengisi nilai ke semua mahasiswa dengan syarat **dosen memberi nilai pada mata kuliah yang dia ampu saja
+
+---------------
+### Dokumentasi
+![image](https://user-images.githubusercontent.com/100481579/224987755-a65f74a1-c363-4f28-8e3d-62182d58ec99.png)
+![image](https://user-images.githubusercontent.com/100481579/224988050-46037b87-4270-4737-afd3-35d08e522aa1.png)
+![image](https://user-images.githubusercontent.com/100481579/224988126-f44dd394-28ce-4f62-b675-480d73847dc8.png)
+![image](https://user-images.githubusercontent.com/100481579/224988631-6501d3e8-87dd-4412-9e6f-ef24c638bca7.png)
+![image](https://user-images.githubusercontent.com/100481579/224989473-61a8f8f6-b84e-4006-b2df-efe163fc5893.png)
+![image](https://user-images.githubusercontent.com/100481579/224990054-65aa798c-86ab-4c0f-a6fb-37f2c4c72e30.png)
+![image](https://user-images.githubusercontent.com/100481579/224990139-a2d5d4c2-899b-40d3-b149-c15e8e23fc49.png)
+
 
 
 
