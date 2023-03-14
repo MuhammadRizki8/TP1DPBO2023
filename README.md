@@ -65,5 +65,71 @@
     - implementing_programs(): digunakan untuk menampilkan pesan bahwa seorang mahasiswa sedang mengimplementasikan program-program tertentu
     - tambah_evaluations(): digunakan untuk menambahkan program-program yang telah dievaluasi ke dalam atribut self._evaluations
     - attending_evaluations(): digunakan untuk menampilkan pesan bahwa seorang mahasiswa sedang menghadiri evaluasi program-program tertentu.
-    
-  
+ 6. English Club
+   * merepresentasikan organisasi english club
+   * Atribut
+     - __nama_club : digunakan untuk menyimpan nama English Club.
+     - _deskripsi : digunakan untuk menyimpan deskripsi dari English Club.
+     - __anggota : digunakan untuk menyimpan daftar anggota English Club.
+   * Method
+     - set & get untuk akses tiap atribut
+     - tambah_anggota(self, anggota_baru) : method yang digunakan untuk menambahkan anggota baru ke dalam list __anggota.
+     - get_all_data(self) : method yang digunakan untuk menampilkan informasi dari objek EnglishClub, yaitu nama club dan deskripsi.
+     - tampilkan_anggota(self) : method yang digunakan untuk menampilkan daftar anggota English Club beserta dengan role-nya.
+7. English Club Member
+  * Merupakan turunan dari kelas mahasiswa, merepresentasikan mahasiswa yang termasuk dalam anggota english club
+  * Atribut
+    - _role : digunakan untuk menyimpan peran (role) anggota di English Club, nilai defaultnya adalah "member".
+    - _EnglishClub : digunakan untuk menyimpan informasi mengenai club yang diikuti oleh anggota ini.
+  * Method
+    - set & get untuk akses tiap atribut
+    - advance_language(self) : method yang digunakan untuk menampilkan pesan bahwa anggota English Club ini sedang meningkatkan kemampuan bahasa Inggrisnya.
+    - plan_program(self) : method yang digunakan untuk menampilkan pesan bahwa anggota English Club ini sedang merencanakan program untuk club yang diikutinya. Method ini memanggil method get_nama() untuk mendapatkan nama anggota, dan memanggil method get_club_name() untuk mendapatkan nama English Club yang diikuti oleh anggota ini.
+8. Assistand
+  * Merupakan turunan dari kelas mahasiswa
+  * Atribut
+    - _dosen : digunakan untuk menyimpan informasi mengenai dosen yang diasisten oleh mahasiswa ini.
+  * Method
+    - set & get untuk akses tiap atribut
+    - mengajar(self) : method yang digunakan untuk menampilkan pesan bahwa mahasiswa ini sedang mengajar sebagai asisten dari seorang dosen. 
+    - memberikan_tugas(self) : method yang digunakan untuk menampilkan pesan bahwa mahasiswa ini sedang memberikan tugas sebagai asisten dari seorang dosen.
+9. Dosen
+  * merupakan turunan kelas sivitas akademik, merepresentasikan dosen dalam kegiatan akademika
+  * Atribut
+    - nip: nomor induk pegawai dosen
+    - fakultas: fakultas tempat dosen bekerja
+    - pend_terakhir: pendidikan terakhir dosen
+    - keahlian: keahlian dosen
+    - laptop: laptop yang digunakan oleh dosen
+    - whiteBoardMarker: alat tulis yang digunakan oleh dosen
+    - matkul_diampu: list mata kuliah yang diampu oleh dosen
+  * Method
+    - set & get untuk akses tiap atribut
+    - add_matkul_diampu(matkul): menambahkan mata kuliah matkul ke dalam list mata kuliah yang diampu oleh dosen
+    - get_all_data(): mencetak seluruh atribut dosen beserta nilainya.
+    - beri_nilai(mhs, matkul, nilai): memberikan nilai pada mata kuliah matkul untuk mahasiswa mhs dengan nilai nilai. Jika matkul tidak termasuk mata kuliah yang diampu oleh dosen, maka akan muncul pesan bahwa nilai tidak dapat diberikan.
+
+### Alur Program
+* Program menampilkan 4 menu utama
+![image](https://user-images.githubusercontent.com/100481579/224984185-a4a83ff7-0226-4123-a27e-c1f3d52ad402.png)
+* jika memilih 1, maka program akan menampilkan semua karakter yang dimiliki
+* jika memilih 2 maka program akan memberikan menu informasi tentang BEM
+* jika memilik 3 maka program akan memberikan menu informasi tentang english club
+* semua menu berada dalam sebuah loop, loop hanya akan berakhir jika user memilih opsi exit
+
+### interaksi dalam class dan antar class
+1. Kelas Mahasiswa
+  * Mahasiswa hanya mendapat nilai dari dosen
+2. BEM member
+  * Setiap BEM member memiliki 3 array tahapan untuk actifity mereka, yaitu:
+    - Planning -> adalah array dimana proker direncanakan
+    - implementing -> diisi berdasarkan proker pada array planning. **tidak dapat mengimplementasikan proker jika belum di-planing!
+    - evaluation -> diisi berdasarkan proker pada array implementing. **tidak dapat mengimplementasikan proker jika belum di-implementing! 
+3. Dosen
+  * Dosen dapat mengisi nilai ke semua mahasiswa dengan syarat **dosen memberi nilai pada mata kuliah yang dia ampu saja
+
+
+
+
+
+
